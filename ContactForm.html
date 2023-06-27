@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ContactUs</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-image: linear-gradient( 135deg, #2AFADF     10%, #C346C2 100%);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  transform: scale(0.97);
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Contact Form</h2>
+
+<div class="container">
+  <form action="Thank You.php" method="POST">      
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter Your Name.....">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Entar Your Last Name.....">
+	
+	<label for="lname">Email</label>
+    <input type="text" id="email" name="email" placeholder="Enter Your Email.....">
+	
+	<label for="lname">Phone Number</label>
+    <input type="text" id="phoneno" name="phoneno" placeholder="Enter Your Phone Number.....">
+	
+    <label for="country">Country</label>
+    <select id="country" name="country">
+	  <option value="india">India</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+	  <option value="russia">Russia</option>
+	  <option value="south Africa">South Africa</option>
+	  <option value="germany">Germany</option>
+	  <option value="japan">Japan</option>
+	  <option value="sri Lanka">Sri Lanka</option>
+	  <option value="egypt">Egypt</option>
+	  <option value="bangladesh">Bangladesh</option>
+	  <option value="france">France</option>
+    </select>
+
+    <label for="query">Your Query</label>
+    <textarea id="query" name="query" placeholder="Write Something....." style="height:70px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
